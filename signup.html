@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - CryptoPlace</title>
+    <title>Sign Up - CryptoPulse</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
             <div class="logo">
-                <a href="index.html">CryptoPlace</a>
+                <i class="fas fa-coins"></i>
+                <h1>CryptoPulse</h1>
             </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-right">
+                <select id="currency-select" class="currency-select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EGP">EGP</option>
+                </select>
+                <button class="sign-up-btn" onclick="window.location.href='login.html'">
+                    Sign in
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
-            <button id="mobile-menu-button">
+            <button id="mobile-menu-btn" class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
