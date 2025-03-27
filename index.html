@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoPulse - Your Gateway to Cryptocurrency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <h1>CryptoPulse</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="/Home/Pages/features.html">Features</a></li>
+                <li><a href="/Home/Pages/pricing.html">Pricing</a></li>
+                <li><a href="/Home/Pages/blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-right">
+                <select id="currency-select" class="currency-select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EGP">EGP</option>
+                </select>
+                <button class="sign-up-btn" onclick="window.location.href='/Home/Pages/signup.html'">
+                    Sign up
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <h1>Track Cryptocurrencies in Real-Time</h1>
+            <p>Get live price updates, market cap data, and more for top cryptocurrencies.</p>
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search cryptocurrencies...">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Crypto Section -->
+        <section id="market" class="crypto-section">
+            <div class="crypto-table">
+                <div class="table-header">
+                    <div class="coin-rank">#</div>
+                    <div class="coin-name">Name</div>
+                    <div class="coin-price">Price</div>
+                    <div class="coin-change">24h Change</div>
+                    <div class="coin-market-cap">Market Cap</div>
+                </div>
+                <div id="coins-grid" class="coins-grid">
+                    <!-- Coins will be dynamically inserted here -->
+                </div>
+                <div class="pagination">
+                    <button id="prev-page" class="pagination-btn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div id="pagination-numbers" class="pagination-numbers">
+                        <!-- Page numbers will be dynamically inserted here -->
+                    </div>
+                    <button id="next-page" class="pagination-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="developer-info">
+                    <img src="/assets/dev.jpg" alt="Ahmed Ashraf Ibrahim" class="developer-photo">
+                    <div class="developer-details">
+                        <h3>Created by</h3>
+                        <p>Ahmed Ashraf Ibrahim</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/ahmedashrafibrahem" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmedashrafibrahim1mnoomidooashraf/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CryptoPulse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoPulse - Coin Details</title>
+    <link rel="stylesheet" href="/Home/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <h1>CryptoPulse</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/Home/Pages/features.html">Features</a></li>
+                <li><a href="/Home/Pages/pricing.html">Pricing</a></li>
+                <li><a href="/Home/Pages/blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-right">
+                <select id="currency-select" class="currency-select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EGP">EGP</option>
+                </select>
+                <button class="sign-up-btn">
+                    Sign up
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="coin-detail-section">
+            <div class="coin-header">
+                <div class="coin-basic-info">
+                    <img id="coin-image" src="" alt="" class="coin-detail-image">
+                    <div class="coin-name-info">
+                        <h1 id="coin-name"></h1>
+                        <span id="coin-symbol" class="coin-symbol"></span>
+                    </div>
+                </div>
+                <div class="coin-price-info">
+                    <div class="current-price">
+                        <h2>Current Price</h2>
+                        <p id="current-price"></p>
+                    </div>
+                    <div class="price-change">
+                        <h2>24h Change</h2>
+                        <p id="price-change"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-controls">
+                    <div class="time-buttons">
+                        <button class="time-button active" data-days="1">24h</button>
+                        <button class="time-button" data-days="7">7d</button>
+                        <button class="time-button" data-days="30">30d</button>
+                        <button class="time-button" data-days="365">1y</button>
+                    </div>
+                </div>
+                <canvas id="priceChart"></canvas>
+            </div>
+
+            <div class="coin-stats">
+                <div class="stat-card">
+                    <h3>Market Cap</h3>
+                    <p id="market-cap"></p>
+                </div>
+                <div class="stat-card">
+                    <h3>24h Volume</h3>
+                    <p id="volume"></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Circulating Supply</h3>
+                    <p id="circulating-supply"></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Supply</h3>
+                    <p id="total-supply"></p>
+                </div>
+            </div>
+
+            <div class="coin-description">
+                <h2>About</h2>
+                <p id="coin-description"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="developer-info">
+                    <img src="/assets/dev.jpg" alt="Ahmed Ashraf Ibrahim" class="developer-photo">
+                    <div class="developer-details">
+                        <h3>Created by</h3>
+                        <p>Ahmed Ashraf Ibrahim</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/ahmedashrafibrahem" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmedashrafibrahim1mnoomidooashraf/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CryptoPulse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/Home/js/coin.js"></script>
+</body>
+</html> 

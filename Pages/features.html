@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoPlace - Features</title>
+    <link rel="stylesheet" href="/Home/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-coins"></i>
+                <h1>CryptoPulse</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Home/Pages/features.html" class="active">Features</a></li>
+                <li><a href="/Home/Pages/pricing.html">Pricing</a></li>
+                <li><a href="/Home/Pages/blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-right">
+                <select id="currency-select" class="currency-select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EGP">EGP</option>
+                </select>
+                <button class="sign-up-btn">
+                    Sign up
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <button id="mobile-menu-btn" class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="features-hero">
+            <h1>Powerful Features for Crypto Traders</h1>
+            <p>Discover all the tools and features that make CryptoPlace the best platform for cryptocurrency tracking and analysis.</p>
+        </section>
+
+        <section class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Real-Time Price Tracking</h3>
+                <p>Get instant updates on cryptocurrency prices with our real-time tracking system. Prices are updated every 30 seconds.</p>
+                <div class="feature-demo">
+                    <div class="price-ticker" id="btc-ticker">
+                        <img src="" alt="Bitcoin" class="ticker-icon">
+                        <div class="ticker-info">
+                            <span class="ticker-name">Bitcoin</span>
+                            <span class="ticker-price"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Multi-Currency Support</h3>
+                <p>View cryptocurrency prices in multiple currencies including USD, EUR, GBP, JPY, and EGP.</p>
+                <div class="feature-demo currency-demo">
+                    <select id="demo-currency-select" class="demo-select">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="EGP">EGP</option>
+                    </select>
+                    <div id="currency-preview"></div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Advanced Search</h3>
+                <p>Find any cryptocurrency instantly with our powerful search feature. Search by name or symbol.</p>
+                <div class="feature-demo">
+                    <div class="search-demo">
+                        <input type="text" id="demo-search" placeholder="Try searching for a coin...">
+                        <div id="search-results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-area"></i>
+                </div>
+                <h3>Price Charts</h3>
+                <p>Analyze price movements with interactive charts. View historical data from 24 hours to 1 year.</p>
+                <div class="feature-demo chart-demo">
+                    <div class="mini-chart-controls">
+                        <button class="mini-time-button active" data-days="1">24h</button>
+                        <button class="mini-time-button" data-days="7">7d</button>
+                    </div>
+                    <canvas id="miniChart"></canvas>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Responsive</h3>
+                <p>Access CryptoPlace on any device. Our platform is fully responsive and works seamlessly on desktop, tablet, and mobile.</p>
+                <div class="feature-demo responsive-demo">
+                    <div class="device-frame">
+                        <div class="device-content">
+                            <div class="mini-crypto-row"></div>
+                            <div class="mini-crypto-row"></div>
+                            <div class="mini-crypto-row"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Price Alerts</h3>
+                <p>Set custom price alerts and get notified when cryptocurrencies reach your target price.</p>
+                <div class="feature-demo">
+                    <div class="alert-demo">
+                        <input type="number" id="alert-price" placeholder="Set price alert...">
+                        <button class="alert-btn">Set Alert</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="developer-info">
+                    <img src="/assets/dev.jpg" alt="Ahmed Ashraf Ibrahim" class="developer-photo">
+                    <div class="developer-details">
+                        <h3>Created by</h3>
+                        <p>Ahmed Ashraf Ibrahim</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/ahmedashrafibrahem" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmedashrafibrahim1mnoomidooashraf/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CryptoPulse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/Home/js/features.js"></script>
+</body>
+</html> 
