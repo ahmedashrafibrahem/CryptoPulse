@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Cryptocurrencies - CryptoPlace</title>
+    <link rel="stylesheet" href="/Home/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>CryptoPlace</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/Home/Pages/features.html">Features</a></li>
+                <li><a href="/Home/Pages/pricing.html">Pricing</a></li>
+                <li><a href="/Home/Pages/blog.html">Blog</a></li>
+            </ul>
+            <div class="nav-right">
+                <select class="currency-select" id="currency-select">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="jpy">JPY</option>
+                    <option value="egp">EGP</option>
+                </select>
+                <button class="sign-up-btn">
+                    <i class="fas fa-user"></i>
+                    Sign Up
+                </button>
+            </div>
+            <button class="mobile-menu" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>All Cryptocurrencies</h1>
+            <p>Explore the complete list of cryptocurrencies available on our platform</p>
+        </section>
+
+        <section class="crypto-section">
+            <div class="crypto-table-header">
+                <div class="table-cell">#</div>
+                <div class="table-cell">Name</div>
+                <div class="table-cell">Price</div>
+                <div class="table-cell">24h Change</div>
+                <div class="table-cell">Market Cap</div>
+            </div>
+            <div class="crypto-grid" id="crypto-grid">
+                <!-- Crypto rows will be dynamically inserted here -->
+            </div>
+            <div class="pagination">
+                <button class="pagination-btn" id="prev-page">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="pagination-numbers" id="pagination-numbers">
+                    <!-- Page numbers will be dynamically inserted here -->
+                </div>
+                <button class="pagination-btn" id="next-page">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About CryptoPlace</h3>
+                <p>Your trusted platform for real-time cryptocurrency tracking and analysis.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CryptoPlace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/Home/js/all-coins.js"></script>
+</body>
+</html> 
