@@ -1,7 +1,6 @@
 # 🚀 CryptoPulse
 
 <div align="center">
-  <img src="https://github.com/ahmedashrafibrahem/CryptoPulse/blob/main/assets/dev.jpg?raw=true" alt="CryptoPulse Logo" width="150" height="150" style="border-radius: 50%;">
   
   [![GitHub license](https://img.shields.io/github/license/ahmedashrafibrahem/CryptoPulse)](https://github.com/ahmedashrafibrahem/CryptoPulse/blob/main/LICENSE)
   [![GitHub stars](https://img.shields.io/github/stars/ahmedashrafibrahem/CryptoPulse)](https://github.com/ahmedashrafibrahem/CryptoPulse/stargazers)
